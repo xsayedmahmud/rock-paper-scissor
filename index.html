@@ -5,7 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissor</title>
-    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="img/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Open+Sans:wght@300;400;700&family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <dialog role="dialog" class="modal" id="modal">
+      <div class="modal-items">
+        <p class="announce"></p>
+        <p class="announce-note"></p>
+        <button type="button" class="play">Play Again</button>
+      </div>
+    </dialog>
+    <header class="header">
+      <h1>Man VS Machine</h1>
+    </header>
+    <div class="container">
+      <div class="typewriter-intro">
+        <p>
+          Rock paper scissor <br />
+          Each one has a strength and flaw <br />
+          Who will win or lose?
+        </p>
+      </div>
+      <div class="game-play">
+        <div class="human">
+          <div class="human-img">
+            <img
+              src="img/human.png"
+              alt="cyberpunk representation of thinking human skull"
+            />
+          </div>
+          <div class="game-choice">
+            <button type="button" class="btn human">
+              <img src="img/rock.png" alt="fist, hand representation of rock" />
+            </button>
+            <button type="button" class="btn human">
+              <img
+                src="img/paper.png"
+                alt="palm, hand representation of paper"
+              />
+            </button>
+            <button type="button" class="btn human">
+              <img
+                src="img/scissor.png"
+                alt="finger representation of scissor"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="vs">
+          <h2>VS</h2>
+        </div>
+        <div class="machine">
+          <div class="machine-img">
+            <img
+              src="img/machine.png"
+              alt="cyberpunk representation of thinking humanoid machine skull"
+            />
+          </div>
+          <div class="game-choice">
+            <button type="button" class="btn machine">
+              <img src="img/rock.png" alt="fist, hand representation of rock" />
+            </button>
+            <button type="button" class="btn machine">
+              <img
+                src="img/paper.png"
+                alt="palm, hand representation of paper"
+              />
+            </button>
+            <button type="button" class="btn machine">
+              <img
+                src="img/scissor.png"
+                alt="finger representation of scissor"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <p class="last-round">
+          Machine’s buttons are broken. Press human’s button to play.
+        </p>
+        <div class="score">
+          <p class="ur-score">Your Score:</p>
+          <p class="machine-score">Machine's Score:</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        Checkout my github profile
+        <a href="https://github.com/xsayedmahmud">xsayedmahmud</a>
+      </p>
+    </footer>
+  </body>
 </html>
