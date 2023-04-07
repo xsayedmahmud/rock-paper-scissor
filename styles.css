@@ -194,9 +194,11 @@ h2 {
 a {
   color: white;
   text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 a:hover {
-  color: #293462;
+  background-color: #293462;
 }
 
 .modal {
